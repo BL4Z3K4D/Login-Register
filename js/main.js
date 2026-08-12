@@ -10,3 +10,15 @@ function alternarFormularios() {
 
 btnRegister.addEventListener('click', alternarFormularios);
 btnLogin.addEventListener('click', alternarFormularios);
+
+const regPassword = document.getElementById('reg-password');
+const confPassword = document.getElementById('conf-password');
+
+registerForm.addEventListener('submit',function(event){
+    event.preventDefault();
+    if(regPassword.value === confPassword.value){
+        alert("¡Registro exitoso!");
+    }else{
+        alert("Las contraseñas no coinciden");
+    }
+})
