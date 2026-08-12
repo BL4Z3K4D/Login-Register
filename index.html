@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register | TechStore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="auth-card">
+            <form id="login-form">
+                <h2>Bienvenido</h2>
+                <!-- Campo para Correo -->
+                <label for="log-email">Email:</label>
+                <input type="email" id="log-email" name="email" autocomplete="username" required placeholder="example@gmail.com">
+
+                <!-- Campo para Contraseña -->
+                <label for="log-password">Contraseña:</label>
+                <input type="password" id="log-password" name="password" required autocomplete="current-password">
+
+                <!-- Boton para enviar y validar -->
+                <button type="submit" class="btn">Enviar</button>
+                <p>¿No tienes cuenta?</p>
+                <button type="button" class="btn" id="btn-register">Regístrate aquí</button>
+            </form>
+            <form id="register-form" class="hidden">
+                <h2>Registra tus datos y accede YA!</h2>
+                
+                <!-- Campo para Nombre -->
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" required autocomplete="given-name">
+                
+                <!-- Campo para Apellido -->
+                <label for="lastname">Apellido:</label>
+                <input type="text" name="lastname" id="lastname" required autocomplete="family-name">
+                
+                <!-- Campo para Correo -->
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" autocomplete="username" required>
+
+                <!-- Campo para Contraseña -->
+                <label for="reg-password">Contraseña:</label>
+                <input type="password" id="reg-password" name="password" required autocomplete="new-password">
+
+                <!-- Campo para Confirmar Contraseña -->
+                <label for="conf-password">Confirmar Contraseña:</label>
+                <input type="password" id="conf-password" name="password" required autocomplete="new-password">
+
+                <button type="submit" class="btn">Registrar</button>
+                <p>¿Ya tienes cuenta?</p>
+                <button type="button" class="btn" id="btn-login">Inicia sesión</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
